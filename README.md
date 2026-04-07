@@ -162,12 +162,9 @@ flowise start
 
 For queries or improvements, feel free to contribute or raise an issue!
 
-```
+<img width="1697" height="683" alt="Screenshot 2026-04-07 142011" src="https://github.com/user-attachments/assets/a6d6affd-5ca8-4916-85e0-dbd502a96f9b" />
+<img width="576" height="697" alt="Screenshot 2026-04-07 142034" src="https://github.com/user-attachments/assets/4e244ab2-8aca-4ad4-9c54-f8ff72c6c8eb" />
+<img width="532" height="717" alt="Screenshot 2026-04-07 142108" src="https://github.com/user-attachments/assets/9dbde062-aa7c-4d2b-89e6-992f7fcb0917" />
+<img width="498" height="683" alt="Screenshot 2026-04-07 142811" src="https://github.com/user-attachments/assets/d3b32316-4d9d-4008-8044-7a54566d3bb2" />
+<img width="503" height="691" alt="Screenshot 2026-04-07 142920" src="https://github.com/user-attachments/assets/a727a927-d8c3-4ebf-8605-16f56f94a56a" />
 
----
-
-If you want, I can also:
-✅ Add **screenshots section (Flowise UI)**  
-✅ Customize this README for your **AI Ethics project (your PPT topic)**  
-✅ Add **badges + deployment steps (very impressive for GitHub)**
-```
