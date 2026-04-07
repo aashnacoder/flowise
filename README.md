@@ -1,11 +1,10 @@
-```markdown
-# RAG Chatbot using Flowise
+RAG Chatbot using Flowise
 
-This project demonstrates a **Retrieval-Augmented Generation (RAG) Chatbot** built using **Flowise**. The chatbot is capable of answering user queries based on a provided document (e.g., PDF) using embeddings and conversational memory.
+This project demonstrates a Retrieval-Augmented Generation (RAG) Chatbot** built using **Flowise**. The chatbot is capable of answering user queries based on a provided document (e.g., PDF) using embeddings and conversational memory.
 
 ---
 
-##  Features
+ Features
 
 -  Load and process documents (PDF, JSON, etc.)
 -  Smart text chunking using Recursive Character Text Splitter
