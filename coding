@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": "fileLoader",
+      "type": "documentLoader",
+      "data": {
+        "name": "File Loader",
+        "fileType": "pdf"
+      }
+    },
+    {
+      "id": "textSplitter",
+      "type": "textSplitter",
+      "data": {
+        "chunkSize": 1000,
+        "chunkOverlap": 200
+      }
+    },
+    {
+      "id": "embeddings",
+      "type": "embeddings",
+      "data": {
+        "provider": "google",
+        "model": "gemini-embedding-001",
+        "apiKey": "YOUR_GOOGLE_API_KEY"
+      }
+    },
+    {
+      "id": "vectorStore",
+      "type": "vectorStore",
+      "data": {
+        "storeType": "memory"
+      }
+    },
+    {
+      "id": "llm",
+      "type": "llm",
+      "data": {
+        "provider": "mistral",
+        "model": "mistral-tiny",
+        "temperature": 0.9,
+        "maxTokens": 500,
+        "apiKey": "YOUR_MISTRAL_API_KEY"
+      }
+    },
+    {
+      "id": "memory",
+      "type": "memory",
+      "data": {
+        "memoryType": "buffer"
+      }
+    },
+    {
+      "id": "qaChain",
+      "type": "conversationalRetrievalQA",
+      "data": {}
+    }
+  ],
+  "edges": [
+    {
+      "source": "fileLoader",
+      "target": "textSplitter"
+    },
+    {
+      "source": "textSplitter",
+      "target": "embeddings"
+    },
+    {
+      "source": "embeddings",
+      "target": "vectorStore"
+    },
+    {
+      "source": "vectorStore",
+      "target": "qaChain"
+    },
+    {
+      "source": "llm",
+      "target": "qaChain"
+    },
+    {
+      "source": "memory",
+      "target": "qaChain"
+    }
+  ]
+}
